@@ -1,6 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  /* font-family */
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  /* font-weight */
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  /* color */
+  --clr-light: #f1f6f9;
+  --clr-dark: #212a3e;
+  --clr-accent: #ff6969;
+  /* 16e0bd (Backup color)*/
+
+  /* font-size */
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
 }
 
 .selfie-image {
